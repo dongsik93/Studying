@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block body_block %}
+    <h1>홈 화면 입니당</h1>
+    {% for user in users %}
+        <h3>{{user.name}}</h3>
+        <h5>{{user.email}}</h5>
+    {% endfor %}
+{% endblock %}    

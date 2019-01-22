@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block body_block %}
+
+<form action="/create">
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input name="title" type="text" class="form-control" id="title" aria-describedby="emailHelp" placeholder="예) 잠자기, 밥먹기, 쉬기....">
+  </div>
+  <div class="form-group">
+    <label for="Contents">Contents</label>
+    <!--<input type="text" class="form-control" id="Contents" placeholder="상세내용을 적으세요">-->
+    <textarea name="Contents" class="form-control" id="Contents" rows=5 placeholder="상세내용을 적으세요"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+{% endblock %}

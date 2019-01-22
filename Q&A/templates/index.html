@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block body_block %}
+
+{% for board in boards %}
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{board[0]}}</h5>
+    <p class="card-text">{{board[1]}}</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+{% endfor %}
+{% endblock %}
